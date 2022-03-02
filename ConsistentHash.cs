@@ -128,7 +128,7 @@ namespace ConsistentHash
                 int hash = BetterHash(node.GetHashCode().ToString() + i);
                 if (!circle.Remove(hash))
                 {
-                    throw new Exception("can not remove a node that not added");
+                    //throw new Exception("can not remove a node that not added");
                 }
             }
             ayKeys = circle.Keys.ToArray();
